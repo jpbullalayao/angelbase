@@ -18,7 +18,8 @@ gem 'spring',        group: :development
 
 group :development do
   gem 'hirb'
-  gem 'mysql2', '~> 0.3.16'
+  gem 'sqlite3', '~> 1.3.9'
+  #gem 'mysql2', '~> 0.3.16'
 end
 
 group :development, :test do
