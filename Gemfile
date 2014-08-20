@@ -18,8 +18,6 @@ gem 'spring',        group: :development
 
 group :development do
   gem 'hirb'
-  #gem 'sqlite3', '~> 1.3.9'
-  gem 'sqlite3-ruby'
   gem 'taps'
   gem 'rvm'
   #gem 'mysql2', '~> 0.3.16'
@@ -27,6 +25,7 @@ end
 
 group :development, :test do
   gem 'annotate'
+  gem 'sqlite3', '~> 1.3.9'
 end
 
 group :production do
