@@ -1,4 +1,19 @@
 Rails.application.routes.draw do
+  resources :users do
+    get 'dashboard'
+  end
+
+  resources :sessions, only: %w(new create destroy)
+  get '/login', to: 'sessions#new'
+  delete '/logout', to: 'sessions#destroy'
+
+  resources :projects
+  resources :comments
+  resources :messages, only: %w(new create show)
+
+  # Static Pages
+  get 'static_pages/home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
