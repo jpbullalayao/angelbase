@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 
@@ -18,8 +17,6 @@ gem 'spring',        group: :development
 
 group :development do
   gem 'hirb'
-  gem 'taps'
-  gem 'rvm'
   #gem 'mysql2', '~> 0.3.16'
 end
 
